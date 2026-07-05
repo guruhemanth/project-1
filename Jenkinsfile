@@ -19,7 +19,6 @@ pipeline {
                 script {
                     echo "Building image ${IMAGE_NAME}:${IMAGE_TAG} on local Docker daemon..."
                     sh """
-                        cd local_projects
                         docker build -t ${IMAGE_NAME}:${IMAGE_TAG} .
                     """
                 }
