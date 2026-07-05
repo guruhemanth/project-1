@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Define the route for the home page
 @app.route("/")
 def hello():
-    return "Hello, World!"
+    return "Hello, World! \n Embrace the enw devops pipeline with jenkins"
 
 if __name__ == "__main__":
     # Run the server on port 8000
