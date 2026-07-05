@@ -44,7 +44,7 @@ pipeline {
                         kubectl config use-context docker-desktop
                         
                         # Apply the local deployment
-                        kubectl apply -f local_projects/local-deployment.yaml
+                        kubectl apply -f local-deployment.yaml
                         
                         # Force rollout restart to use the newly built image
                         kubectl rollout restart deployment newhello-deployment
